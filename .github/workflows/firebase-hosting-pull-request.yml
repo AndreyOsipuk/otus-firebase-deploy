@@ -5,6 +5,7 @@ name: Deploy to Firebase Hosting on PR
 'on': pull_request
 jobs:
   build_and_preview:
+    permissions: write-all
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
